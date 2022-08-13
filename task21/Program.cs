@@ -8,7 +8,6 @@ double DistanceIn3D(int xc1, int yc1, int zc1, int xc2, int yc2, int zc2)
     return Math.Sqrt((xc1 - xc2) * (xc1 - xc2) + (yc1 - yc2) * (yc1 - yc2) + (zc1 - zc2) * (zc1 - zc2));
 }
 
-
 Console.Write("Enter xA-coordinate: ");
 int xa = Convert.ToInt32(Console.ReadLine());
 Console.Write("Enter yA-coordinate: ");
@@ -21,6 +20,5 @@ Console.Write("Enter yB-coordinate: ");
 int yb = Convert.ToInt32(Console.ReadLine());
 Console.Write("Enter zB-coordinate: ");
 int zb = Convert.ToInt32(Console.ReadLine());
-
 double distance = DistanceIn3D(xa, ya, za, xb, yb, zb);
 Console.WriteLine(Math.Round(distance, 2));
