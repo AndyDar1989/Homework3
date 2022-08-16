@@ -21,4 +21,4 @@ int yb = Convert.ToInt32(Console.ReadLine());
 Console.Write("Enter zB-coordinate: ");
 int zb = Convert.ToInt32(Console.ReadLine());
 double distance = DistanceIn3D(xa, ya, za, xb, yb, zb);
-Console.WriteLine(Math.Round(distance, 2));
+Console.WriteLine($" the distance is {Math.Round(distance, 2)}");
