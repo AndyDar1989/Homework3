@@ -5,14 +5,16 @@
 
 
 void NumberInCube(int num)
-{int count = 1;
-while (count <= num)
 {
-    Console.WriteLine($"{count} | {Math.Pow(count, 3)}");
-    count++;
-}}
+    int count = 1;
+    while (count <= num)
+    {
+        Console.WriteLine($"{count} | {Math.Pow(count, 3)}");
+        count++;
+    }
+}
 
 Console.Write("Enter positive number N: ");
 int n = Convert.ToInt32(Console.ReadLine());
-NumberInCube (n);
+NumberInCube(n);
 

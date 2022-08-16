@@ -16,20 +16,20 @@ int n = Convert.ToInt32(Console.ReadLine());
 string result = Palindrome(n);
 Console.WriteLine(result);*/
 
-string Palindrome (int num)
+string Palindrome(int num)
 {
     int new_number = 0;
-    int num1=num;
-    int origin_num=num;
-    while(num!=0)
+    int num1 = num;
+    int origin_num = num;
+    while (num != 0)
     {
-        num1=num%10;
-        new_number = new_number*10+num1;
-        num = num/10;
+        num1 = num % 10;
+        new_number = new_number * 10 + num1;
+        num = num / 10;
     }
-    if (origin_num==new_number) return "This is palindrome";
+    if (origin_num == new_number) return "This is palindrome";
     else return "this isn't palindrome";
-    }
+}
 
 Console.Write("Enter number: ");
 int n = Convert.ToInt32(Console.ReadLine());
